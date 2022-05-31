@@ -21,9 +21,9 @@
     position: relative;
     display: inline-block;
     height: 30px;
-    margin: 10px 0 10px 50px;
-    padding-right: 50px;
-    border-right: 1px solid white;
+    margin: 10px 0 10px calc(5vw + 5px);
+    padding-right: calc(10vw);
+    border-right: 0.2vw solid white;
 }
 
 .icon{
@@ -38,6 +38,7 @@
 
 .icon i{
     position: absolute;
+    left: 10px;
     font-size: 30px;
     color: white;
 }

@@ -1,6 +1,6 @@
 .placeholder{
-    position: relative;
-    top: calc(100vh - 50px);
+    position: absolute;
+    top: calc(100vh);
     min-height: 100%;
 }
 
