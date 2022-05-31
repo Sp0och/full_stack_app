@@ -12,7 +12,7 @@ function Header (){
                 <li className="nav-element"><a href='http.google.com' className="nav-link">About</a></li>
                 <li className="nav-element"><a href='http.google.com' className="nav-link">Github</a></li>
                 <li className="nav-element"><a href='http.google.com' className="nav-link">Linkedin</a></li>
-                <li className="nav-element"><a href='http.google.com' className="nav-link">My Website</a></li>
+                <li className="nav-element"><a href='http.google.com' className="nav-link">List</a></li>
             </ul>
         </div>
         </>
@@ -22,7 +22,7 @@ function Header (){
 function Video (){
     return(
         <div className="video">
-            <video className="video-player" autoPlay loop muted src={Dji} type="video/mp4"/>
+            {/* <video className="video-player" autoPlay loop muted src={Dji} type="video/mp4"/> */}
         </div>
     )
 }
