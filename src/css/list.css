@@ -1,0 +1,35 @@
+.list-container{
+    position: relative;
+    width: 80vw;
+    height: auto;
+    padding-bottom: 15px;
+    background-color: rgb(131, 131, 131);
+    margin: 50px auto;
+}
+
+.list-container li{
+    position: relative;
+    top: 10px;
+    background-color: rgb(191, 191, 191);
+    height: 5vh;
+    border: 2px solid black;
+    margin: 5px 10px;
+}
+
+.list-container p{
+    position: relative;
+    top: 25px;
+    color: black;
+    text-align: center;
+}
+
+.list-container li a {
+    color: red;
+    top: 18px;
+    position: absolute;
+    left: 90%;
+}
+
+.list-container li a i{
+    font-size: 30px;
+}

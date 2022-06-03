@@ -8,11 +8,11 @@ function Header (){
         <div className="navbar">
             <div className='icon-container'><a className="icon" href="https.google.com"><i className="fa-solid fa-anchor"></i></a></div>
             <ul className="nav-list">
-                <li className="nav-element"><a href='http.google.com' className="nav-link">Home</a></li>
-                <li className="nav-element"><a href='http.google.com' className="nav-link">About</a></li>
+                <li className="nav-element"><a href='/' className="nav-link">Home</a></li>
+                <li className="nav-element"><a href='/about' className="nav-link">About</a></li>
                 <li className="nav-element"><a href='http.google.com' className="nav-link">Github</a></li>
                 <li className="nav-element"><a href='http.google.com' className="nav-link">Linkedin</a></li>
-                <li className="nav-element"><a href='http.google.com' className="nav-link">List</a></li>
+                <li className="nav-element"><a href='/list' className="nav-link">List</a></li>
             </ul>
         </div>
         </>
@@ -29,7 +29,9 @@ function Video (){
 
 function Image() {
     return(
-        <div className="cover-image"/>
+        <div className="image_container">
+            <div className="cover-image"/>
+        </div>
     )
 }
 
