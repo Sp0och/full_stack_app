@@ -1,9 +1,8 @@
-import {Header, Video, Headline,Image } from './components/top.js'
-import Footer from './components/footer.js'
-import Placeholder from './components/placeholder.js'
-import ShoppingList from './components/list.js'
+import {Header, Video, Headline,Image } from './components/Top.js'
+import Footer from './components/Footer.js'
+import Placeholder from './components/Placeholder.js'
+import List from './components/List.js'
 import {BrowserRouter as Router, Route, Routes} from 'react-router-dom'
-import './css/index.css'
 function App(){
     return(
         <Router>
@@ -44,7 +43,7 @@ function App(){
                     }/>
                     <Route exact path='/list' element={
                         <>
-                        <ShoppingList/>
+                        <List/>
                         <Footer/>
                         </>
                     }/>

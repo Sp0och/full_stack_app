@@ -1,4 +1,3 @@
-import '../css/placeholder.css';
 function Placeholder() {
     return(
         <div className="placeholder">

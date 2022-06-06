@@ -1,35 +1,49 @@
-import '../css/list.css'
+import { useState } from "react";
+import Header from "./list/Header.js";
+import Tasks from "./list/Tasks.js";
 
+const List = () => {
+  const [tasks, setTasks] = useState([
+    {
+      id: 1,
+      text: "Doctors Appointment",
+      day: "Feb 5th at 2:30pm",
+      reminder: true,
+    },
+    {
+      id: 2,
+      text: "Cinema",
+      day: "Feb 6th at 1:30pm",
+      reminder: true,
+    },
+    {
+      id: 3,
+      text: "Meeting at school",
+      day: "Feb 5th at 2:30pm",
+      reminder: false,
+    },
+  ]);
 
+  const deleteTask = (id) => {
+    setTasks(tasks.filter((task) => task.id !== id));
+  };
 
+  const toggleReminder = (id) => {
+    setTasks(tasks.map((task) => (task.id === id ? { ...task, reminder: !task.reminder } : task)));
+  };
 
-function Button({removeItem}) {
   return (
-    <a href="#" onClick={removeItem}><i class="fa-solid fa-xmark"></i></a>
-  )
-}
+    <>
+      <div className="list-container">
+        <Header />
+        {tasks.length > 0 ? (
+          <Tasks tasks={tasks} onDelete={deleteTask} onToggle={toggleReminder} />
+        ) : (
+          "No Tasks in planner"
+        )}
+      </div>
+    </>
+  );
+};
 
-
-function ShoppingList() {
-
-    const removeItem = (e) => {
-        e.preventDefault();
-        console.log("remove");
-    }
-
-  return (
-    <div className='list-container'>
-        <ul>
-            <li><p>Hello World</p><Button onClick={()=> removeItem()}/></li>
-            <li><p>Hello World</p><Button/></li>
-            <li><p>Hello World</p><Button/></li>
-            <li><p>Hello World</p><Button/></li>
-            <li><p>Hello World</p><Button/></li>
-            <li><p>Hello World</p><Button/></li>
-            <li><p>Hello World</p><Button/></li>
-        </ul>
-    </div>
-  )
-}
-
-export default ShoppingList
+export default List;

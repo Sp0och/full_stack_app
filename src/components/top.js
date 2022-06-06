@@ -1,5 +1,3 @@
-import React from "react";
-import "../css/top.css"
 // import Dji from '../media/dji.mp4'
 
 function Header (){
